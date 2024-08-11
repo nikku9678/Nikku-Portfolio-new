@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+
+  font-style: normal;
+}
+
+body {
+  /* background: linear-gradient(to right, #83818c, #ffc783); */
+  background: rgb(255,247,246);
+background: linear-gradient(90deg, rgba(255,247,246,1) 0%, rgba(245,229,229,1) 50%, rgba(255,236,209,1) 100%);
+  
+  color: #1f2937; /* Light text color */
+}
+
+/* Dark mode styles */
+body.dark {
+  background-color: rgb(44, 44, 44); /* Dark background */
+  color: #f9fafb; /* Dark text color */
+}
+
+.circular-follower {
+  position: fixed;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(100, 100, 255, 0.7);
+  border-radius: 50%;
+  pointer-events: none;
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease, transform 0.5s ease-out;
+}
