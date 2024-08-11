@@ -178,7 +178,7 @@ export const data = [
         tools:["React js" , "Node.js","Axios","MongoDb","Exprees.js"],
 
         description:[
-            "Developed a complaint form to capture and manage real-time data for efficient issue resolution.",
+            "Developed E-Library to store the books",
             
         ],
         tag:"Html css and Javascript",
