@@ -14,8 +14,8 @@ const skills = [
   {
     name: 'Backend',
     images: [
-      './images/skills/node.png',
-      './images/skills/express.png',
+      './images/skills/nodejs.png',
+      './images/skills/expressjs.png',
       './images/skills/mongodb.png',
       './images/skills/mysql.png',
       './images/skills/firebase.png',
@@ -26,9 +26,9 @@ const skills = [
     images: [
       './images/skills/git.png',
       './images/skills/github.png',
-      './images/skills/docker.png',
       './images/skills/linux.png',
-      './images/skills/vscode.png',
+      './images/skills/vdcode.png',
+      './images/skills/codepne.png',
     ],
   },
   
@@ -36,7 +36,7 @@ const skills = [
 
 const SkillCards = () => {
   return (
-    <div className="w-[80%] mx-auto flex justify-center items-center flex-col min-h-screen bg-gray-100 py-4">
+    <div id='skills' className="w-[100%] lg:w-[80%] mx-auto flex justify-center items-center flex-col min-h-screen bg-gray-100 py-4">
       <h1 className="text-4xl font-bold mb-8">My Skills</h1>
       <div className="w-4/5 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
         {skills.map((skill, index) => (

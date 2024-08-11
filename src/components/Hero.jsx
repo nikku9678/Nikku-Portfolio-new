@@ -25,7 +25,7 @@ const Hero = () => {
             <div className="max-w-[720px] lg:text-left lg:order-1">
               <h1 className="mb-3 pb-4 text-3xl font-bold text-green-700 md:text-5xl">
                 <Typewriter
-                  words={['Software Developer', 'Coder']}
+                  words={['Software Developer', 'Coding Enthusiast']}
                   loop={false}
                   cursor
                   cursorStyle="_"
@@ -35,11 +35,11 @@ const Hero = () => {
                 />
               </h1>
               <p className="mb-6 max-w-[528px] text-md md:text-lg md:mb-10">
-                I am an aspiring software developer with expertise in Java and the MERN stack, focused on building scalable web applications and enhancing user interfaces. Currently pursuing a B.Tech in Computer Science & Engineering, I'm passionate about solving problems and eager to contribute to innovative projects.
+                I am an aspiring software developer with expertise in Java and the MERN stack.
               </p>
               <div className="flex flex-row justify-start items-center lg:justify-start">
                 <a
-                  href="https://drive.google.com/drive/u/0/folders/1IixhTfFg9nbdrY_NDOyGpcBfOF5KgiTc"
+                  href="https://drive.google.com/file/d/1qdkKVCraJXSouh1uy6Mh3lrDUs5skjpT/view?usp=sharing"
                   className="mr-5 inline-block rounded-full px-8 py-3 text-center font-bold text-white transition hover:border-black hover:bg-yellow-300 bg-btnColor hover:text-black md:mr-6 lg:mr-8 text-md"
                 >
                   Resume

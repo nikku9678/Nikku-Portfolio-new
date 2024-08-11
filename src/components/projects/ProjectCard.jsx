@@ -4,51 +4,23 @@ import { FaGithub } from "react-icons/fa";
 import { FaLocationArrow } from "react-icons/fa6";
 
 const ProjectCard = ({ title, description, Img, link, github, tag, tools }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-  const [isVisible, setIsVisible] = useState(false);
-
-  const openModal = () => {
-    setIsModalOpen(true);
-    setTimeout(() => {
-      setIsVisible(true);
-    }, 10); // Delay to ensure the initial state is applied
-  };
-
-  const closeModal = () => {
-    setIsVisible(false);
-    setTimeout(() => {
-      setIsModalOpen(false);
-    }, 300); // Match the duration of the close animation
-  };
-
-  const getTagColor = (tag) => {
-    switch (tag) {
-      case "React.js":
-        return "bg-green-500";
-      case "Mern-stack":
-        return "bg-yellow-500";
-      case "Html-css-Javascript":
-        return "bg-green-500";
-      default:
-        return "bg-pink-500";
-    }
-  };
+ 
 
   return (
     <div className="relative group w-full h-25 sm:w-1/2 md:w-1/3 p-1 md:p-4">
       <div
-        className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-105 hover:shadow-2xl cursor-pointer py-4 hover:border-2 flex flex-col h-full"
-        onClick={openModal}
+        className="bg-white rounded-xl shadow-lg overflow-hidden transform transition-all duration-500 hover:scale-100 hover:shadow-2xl cursor-pointer py-4 hover:border-2 flex flex-col h-full"
+    
       >
         <div className="flex-1">
           <img
             src={Img}
             alt={title}
-            className="rounded-3xl w-full h-48 object-cover"
+            className="rounded-2xl px-2 w-full h-48 object-cover"
           />
         </div>
 
-        <div className="px-4 mb-4 flex justify-between items-center">
+        <div className="px-4 my-4 flex justify-between items-center">
           <h2 className="text-xl font-semibold mb-2">{title}</h2>
 
           <div className="flex gap-0">

@@ -24,7 +24,7 @@ function About() {
           </div>
         </div>
         <div className="flex-1">
-          <p className="mb-10 max-w-2xl text-[15px] md:text-lg md:text-lg">
+          <p className="mb-10 max-w-2xl text-[15px] md:text-lg">
             I am an aspiring software developer pursuing a B.Tech in Computer Science & Engineering, with experience in building scalable web applications using Java and the MERN stack. Through internships, I have optimized performance, implemented component-based architecture, and enhanced user interfaces. I am passionate about creating innovative solutions and eager to grow within a dynamic team.
           </p>
 

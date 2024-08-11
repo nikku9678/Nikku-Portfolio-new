@@ -14,6 +14,14 @@ const Navbar = () => {
     setIsOpen(false);
   };
 
+  const whatsappNumber = "7631770210"; 
+  const message = "Hello! I'd like to talk with you.";
+
+  const handleClick = () => {
+    const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappLink, "_blank");
+  };
+
   return (
     <nav className="bg-white bg-opacity-90 text-black fixed top-0 left-0 w-full z-20">
       <div className="max-w-6xl py-1 mx-auto px-4 sm:px-0 lg:px-0">
@@ -40,6 +48,14 @@ const Navbar = () => {
                 About
               </Link>
               <Link
+                to="experience"
+                smooth={true}
+                duration={500}
+                className="text-black hover:bg-black hover:text-white py-2 px-4 rounded-3xl text-lg  cursor-pointer"
+              >
+                Experience
+              </Link>
+              <Link
                 to="projects"
                 smooth={true}
                 duration={500}
@@ -58,17 +74,9 @@ const Navbar = () => {
             </div>
           </div>
           <div className="hidden md:flex items-center space-x-4 ml-6">
-            {/* <a href="https://facebook.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
-              <FaFacebook size="1.5em"color='blue' />
-            </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
-              <FaTwitter size="1.5em" color='skyblue'/>
-            </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="text-black hover:text-gray-600">
-              <FaInstagram size="1.5em" color='red'/>
-            </a> */}
+        
 
-            <button className='bg-black flex justify-center items-center gap-3 rounded-3xl text-white px-6 py-3' >Let's talk <CiLocationArrow1 color='yellow'fontSize={'20px'} fontWeight={'1000'}/></button>
+            <button className='bg-black flex justify-center items-center gap-3 rounded-3xl text-white px-6 py-3'onClick={handleClick} >Let's talk <CiLocationArrow1 color='yellow'fontSize={'20px'} fontWeight={'1000'}/></button>
           </div>
           <div className="-mr flex md:hidden">
             <button
@@ -110,6 +118,15 @@ const Navbar = () => {
             className="text-black hover:bg-gray-200 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
           >
             About
+          </Link>
+          <Link
+            to="experience"
+            smooth={true}
+            duration={500}
+            onClick={closeMenu}
+            className="text-black hover:bg-gray-200 hover:text-gray-800 block px-3 py-2 rounded-md text-base font-medium cursor-pointer"
+          >
+            Experience
           </Link>
           <Link
             to="projects"
